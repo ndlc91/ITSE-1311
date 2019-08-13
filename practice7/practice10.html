@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Student Major Form</title>
+        <style>
+            *{
+                box-sizing:border-box;
+            }
+            input[type=text], input[type=email], select{
+                width:100%;
+                border-radius: 5px;
+                padding:10px 20px;
+                margin: 10px 0px;
+                background-color: #f1f1f1;
+            }
+            select>option{
+                font-size: 1.2rem;
+                font-weight:bold;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            select {
+                appearance:button;
+                border-radius: 2px;
+                background-color: #1a351b;
+                border: 1px solid #cccccc;
+                border-radius: 5px;
+                color: white;
+                font-size:inherit;
+                display:block;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size:1.2rem;
+                font-weight: bold;
+            }
+
+            input[type=submit], input[type=reset]{
+                width:50%;
+                display:block;
+                padding:10px 20px;
+                margin:10px 0;
+                border-radius:5px;
+                float:left;
+                background-color:#60be64;
+                font-size:1.2rem;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color:white;
+            }
+            label, h3{
+                font-size: 1.2rem;
+                font-weight: bold;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            label{
+                cursor: normal;
+            }
+            label.normal{
+                font-weight:normal;
+            }
+            input[type=radio] {
+                appearance: none;
+                display: inline-block;
+                position: relative;
+                background-color: #f1f1f1;
+                color: #666;
+                top: 10px;
+                height: 30px;
+                width: 30px;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+            input[type=radio]:hover{
+
+                background-color:#f7f7f7;
+            }
+
+            body{
+                background-color: #f7f7f7;
+            }
+            .container{
+                background-color:white;
+                width:90%;
+                margin-left: auto;
+                margin-right:auto;
+                padding:1em;
+                border-radius:5px;
+                border: 2px solid #eeeeee;
+
+            }
+            .group{
+                border-radius:5px;
+                border:2px solid #cccccc;
+                background-color:#f7f7f7;
+                padding: 1em 0;
+                margin: 10px 0px;
+
+            }
+
+            .group::after{
+                display:table;
+                content: " ";
+                clear:both;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <h1>What is your major?</h1>
+        <form id="studentMajorForm" action="feedback.php" method="POST">
+            <!--First name-->
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <!--Last name-->
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <!--e-mail-->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name = "email" required>
+            <!--Radio button set are exclusive-->
+            <div class="group">
+            <h3>Have you declared your major?</h3>
+            <label for="majoryes">Yes</label>
+            <input type="radio" id="majoryes" name="major" value="yes">
+            <label for="majorno">No</label>
+            <input type="radio" id="majorno" name="major" value="no">
+            </div>
+            <!--option list for major-->
+            <h3>What is your major?</h3>
+            <div class="group">
+            <select id="degree" size="1">
+                <option value=" " disabled selected hidden>Degree Choice</option>
+                <option value="undeclared">Undeclared</option>
+                <option value="CS-AS">Computer Science AS</option>
+                <option value="CIS-AAS">Computer Systems AAS</option>
+                <option value="WM-AAS">Web and Mobile AAS</option>
+                <option value="HelpDesk">Help Desk Certificate</option>
+                <option value="InfoSys">Information Systems Certificate</option>
+                <option value="Front-End">Front End Certificate</option>
+                <option value="Full-Stack">Full Stack Certificate</option>
+                <option value="Mobile">Mobile</option>
+                <option value="Network">Network Degree</option>
+                <option value="Other">Other</option>
+            </select>
+            <!--text field for other major-->
+            <label for="otherMajor">If you selected "Other Degree", what is your major?</label>
+            <input type="text" id="otherMajor" name="otherMajor">
+            </div>
+            <!--Submit and Reset-->
+            <input type = "submit" value = "Send">
+            <input type = "reset" value = "Clear">
+
+        </form>
+        </div>
+    </body>
+</html>

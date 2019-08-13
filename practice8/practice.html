@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JS Practice</title>
+    <script>
+    function getName(){
+        let user = " ";
+        if(user != null){
+        let newUser = prompt("What is your name?", user);
+        document.getElementById("userName").innerHTML = "My name is " + newUser;
+        }
+    }
+    </script>
+</head>
+<body>
+    <h1>JS Practice</h1>
+    <p id="userName">
+        <!--<script>
+        //alert("My name is Nathan");
+        //document.write("My name is Nathan");
+        </script>-->
+    </p>
+    <button type="button" onclick='getName();'>Message</button>
+</body>
+</html>

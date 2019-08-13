@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Holiday Survey</title>
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: 'Nunito Sans', sans-serif;
+            }
+
+            h1{
+                font-weight: bold;
+                text-align: center;
+            }
+
+            header{
+                border-bottom: 2px cornflowerblue;
+            }
+
+            h2{
+                text-align:center;
+                font-weight: bold;
+            }
+
+            .block{
+                display:block;
+            }
+
+            #holidayform{
+                border: 1px rebeccapurple;
+                border-radius: 20px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+        <h1>Holiday National Survey</h1>
+        </header>
+        <form id="holidayForm" action="feedback.php" method="POST">
+            <!--Text input name, email, #-->
+            <div class="contact">
+            <h2>Contact Information</h2>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+            </div>
+            <!--Favorite Holiday radio buttons-->
+            <div class="favholiday">
+            <h2>Favorite Holiday</h2>
+            <div class = "block">
+            <label for="christmas">Christmas:</label>
+            <input type="radio" id="christmas" name="holiday" value="christmas">
+            </div>
+            <div class = "block">
+            <label for="halloween">Halloween:</label>
+            <input type="radio" id="halloween" name="holiday" value="halloween">
+            </div>
+            <div class = "block">
+            <label for="thanksgiving">Thanksgiving:</label>
+            <input type="radio" id="thanksgiving" name="holiday" value="thanksgiving">
+            </div>
+            <div class = "block">
+            <label for="other">Other:</label>
+            <input type="radio" id="other" name="holiday" value="other">
+            <div class = "block">
+            <label for="otherHoliday">If 'Other' selected, what is your favorite holiday?</label>
+            <input type="text" id="otherHoliday" name="otherHoliday">
+            </div>
+            </div>
+            </div>
+            <!--Halloween Traditions check boxes-->
+            <div class="halloween">
+            <h2>Halloween Traditions Survey</h2>
+            <label for="trickOrTreat">Trick or Treat:</label>
+            <input type="checkbox" id="trickOrTreat" name="trickOrTreat" value="trickOrTreat">
+            
+            <label for="costumes">Costumes:</label>
+            <input type="checkbox" id="costumes" name="costumes" value="costumes">
+           
+            <label for="candy">Candy:</label>
+            <input type="checkbox" id="candy" name="candy" value="candy">
+            
+            <label for="parties">Costumes:</label>
+            <input type="checkbox" id="parties" name="parties" value="parties">
+            </div>
+
+            <div class="Thanksgiving">
+                <h2>Favorite Thanksgiving Food</h2>
+                <select id="food" size="1">
+                    <option value = " ">What Thanksgiving food is your favorite?</option>
+                    <option value = "turkey">Turkey</option>
+                    <option value = "stuffing">Stuffing</option>
+                    <option value = "mashedpotatoes">Mashed Potatoes</option>
+                    <option value = "cranberrysauce">Cranberry Sauce</option>
+                    <option value = "greenbeancasserole">Green Bean Casserole</option>
+                    <option value = "pecanpie">Pecan Pie</option>
+                    <option value = "pumpkinpie">Pumpkin Pie</option>
+                    <option value = "sweetpotatocasserole">Sweet Potato Casserole</option>
+                </select>
+                <label for="cities">What city do you celebrate Thanksgiving in?</label>
+                <input type="text" id="cities" name="cities">
+            </div>
+
+            
+
+
+            <div class="christmas">
+            <h2>Christmas Traditions</h2>
+            <label for="christmasTraditions">Tell us a little about your Christmas traditions:</label>
+            <textarea rows="4" id="christmasTraditions" name="christmasTraditions"></textarea>
+            </div>
+
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+
+
+        </form>
+
+
+
+
+    <footer>
+        <p>Nathan De La Cruz, July 29 2019</p>
+    </footer>
+    </body>
+
+
+
+
+
+</html>

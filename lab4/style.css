@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 1px 1px rgb(70, 17, 17);
+}
+
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+h1, h2 {
+    font-family:'Rokkitt', serif;
+
+}
+
+.header {
+    display: block;
+    position: fixed;
+    width: 99%;
+    text-align: center;
+    background: linear-gradient(to bottom right, #f1cfcf, #dbbda9);
+
+}
+
+body {
+    background-image: url(scarybackground.jpg);
+    background-size:cover;
+    background-color: rgba(180, 200, 180, .05);
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    width: 16%;
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(36, 20, 20);
+    font-weight: bolder;
+    font-size: 18px;
+
+}
+
+
+a:visited{
+    color: rgb(70, 17, 17);
+
+}
+
+a:hover{
+    color: rgb(173, 17, 17);
+}
+
+a:active{
+    text-decoration: underline;
+}
+
+.col1 {
+    margin-top: 100px;
+    float: left;
+    width: 50%;
+
+}
+
+
+.col2 {
+    margin-top: 100px;
+    float: left;
+    width: 25%;
+}
+
+.col3 {
+    margin-top: 100px;
+    float: left;
+    width: 25%;
+
+}
+
+.warning {
+    max-width: 100%;
+}
+
+figure {
+    padding: 7px;
+    border-style: dotted;
+    border-color: black;
+    border-radius: 10px;
+}
+
+footer {
+    clear: left;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: monospace;
+}

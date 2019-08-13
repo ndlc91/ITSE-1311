@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(240, 240, 240);
+
+
+}
+
+p{
+    text-align: center;
+}
+.font2{
+    font-family: 'Assistant', sans-serif;
+}
+h3{
+    font-size: 20px;
+}
+
+header{
+    text-align: center;
+    background-color: slategrey;
+}
+
+h1, h2{
+    color: beige;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.info{
+    color: rgba(128, 94, 9, 0.842);
+}
+
+nav a{
+    color: beige;
+    padding: 3em;
+    
+}
+
+a:hover{
+    color: goldenrod;
+}
+
+a:visited{
+    color: purple;
+}
+
+li{
+    list-style-type: square;
+}
+
+footer{ 
+    color: rgba(128, 94, 9, 0.842);
+    text-align: center;
+    letter-spacing: .1em;
+    word-spacing: .3em;
+}
+
+a{
+    text-decoration: underline;
+}
+

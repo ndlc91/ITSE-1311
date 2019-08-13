@@ -1,0 +1,178 @@
+/*
+font-family: 'Timmana', sans-serif;  title
+font-family: 'Titillium Web', sans-serif;   body
+*/
+
+:root{
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+
+}
+
+h1, h2 {
+    font-family: 'Timmana', sans-serif;
+    font-size: 40px;
+}
+
+body{
+    background-image: url("background.jpg");
+    background-color:white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom left;
+    background-size: cover;
+
+}
+
+
+/*Header styling */
+
+
+header {
+    background-color: #E24E42;
+    width:100%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+header h1 {
+    text-align: center;
+    color: beige;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+
+}
+
+.flex li{
+    list-style: none;
+}
+
+.flex>li{
+    flex: 0 0 200px;
+}
+
+
+.flex li a{
+    color:white;
+    text-decoration:none;
+}
+
+
+
+
+/* Body, Grid Styling */
+
+.grid {
+    margin: 10px;
+    display:grid;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.8fr .7fr .7fr .02fr;
+    grid-gap: 0.5em;
+}
+
+.grid > * {
+    width:100%;
+    color: white;
+    padding: 2em;
+    border-radius: 0.5em;
+} 
+
+.weekly_pick{
+    background-color: #E9B000;
+    grid-row: 1/2;
+    grid-column: 1 / span 4;
+    
+}
+
+.weekly_pick a{
+    color: white;
+
+}
+
+.weekly_pick a:hover{
+    color: #EB6E80;
+}
+
+.weekly_pick a:visited{
+    color: #E24E42;
+}
+
+figure{
+    display: inline-block;
+}
+
+figure img{
+    max-width: 100%;
+}
+
+.resize {
+    width: 550px;
+    height: auto;
+}
+
+.kb{
+    max-width: 100%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.home{
+    background-color: #008F95;
+    grid-column: 1/4;
+    grid-row: 2/4;
+    
+    text-align: center;
+}
+
+.home img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
+
+.home li{
+    list-style-position: inside;
+}
+
+.topoptions{
+    background-color: #EB6E80;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align:center;
+}
+
+.topoptions li{
+    list-style: none;
+}
+
+footer{
+    background-color: rgba(255, 255, 255, .3);
+    color: black;
+    text-align: right;
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+
+
+

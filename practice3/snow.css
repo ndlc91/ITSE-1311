@@ -1,0 +1,76 @@
+/* external stylesheet for practice 3 */
+@font-face{
+    font-family: chunky;
+    src: url(Chunkfive.otf);
+}
+#wrapper{
+    width: 90%;
+    height: auto;
+    padding: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(202, 214, 255);
+
+}
+
+.fav{
+    color: purple;
+    font-weight: bolder;
+}
+body{
+    background-color: navy;
+    font-size: 16px;
+    font-family: "Bookman Old Style", Garamond, Georgia, serif;
+
+}
+
+h1{
+    font-family: chunky;
+    color: navy;
+    text-align: center;
+    letter-spacing: .5em;
+    word-spacing: .2em;
+
+}
+h2{
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    letter-spacing: .3em;
+    word-spacing: .1em;
+}
+
+header{
+    background-color: rgba(255, 240, 220, .5)
+}
+h1, h2, h3 {
+    color: navy;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li{
+    background-color: navy;
+    width: 70%;
+    padding: .5em;
+    border-bottom: 1px white solid;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 1.1em;
+}
+nav a:link{
+    color: white;
+}
+
+nav a:visited{
+    color: yellow;
+}
+nav a:hover{
+    color: goldenrod;
+}
+nav a:active{
+    color:black;
+}

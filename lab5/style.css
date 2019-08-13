@@ -1,0 +1,183 @@
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(190, 190, 190);
+}
+
+.img1{
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes rainbow-text{
+    0%{
+        color: red;
+    }
+
+    14%{
+        color: orange;
+    }
+
+    28%{
+        color: yellow;
+    }
+
+    42%{
+        color: green;
+    }
+
+    56%{
+        color: blue;
+    }
+
+    70%{
+        color: indigo;
+    }
+
+    84%{
+        color: violet;
+    }
+    100%{
+        color: black;
+    }
+}
+
+.animation{
+    animation-name: rainbow-text;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+/*Mobile Layout - Optimized for Iphone X  width: 375px */
+@media only screen and (max-width: 375px) {
+    body{
+        background-color: rgb(230, 230, 230);
+        text-align: center;
+        line-height: 2em;
+    }
+
+    header{
+        background-color: white;
+    }
+    
+    ul{
+        list-style-type: square;
+        list-style-position: inside;
+    }
+
+    li{
+        font-size: 20px;
+    }
+
+    .col1, .col2, .col3{
+    width: 100%;
+    
+    }
+}
+
+
+/*Tablet Layout - Optimized for iPad width: 768px */
+
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+
+    body{
+        background-color: rgb(230, 230, 230);
+        margin: 5px;
+        line-height: 2em;
+        text-align: center;
+        }
+
+    .col1{
+        float: left;
+        width: 45%;
+        padding: .4em;
+    }
+
+    .col2{
+        float: left;
+        width: 45%;
+        padding: .4em;
+
+    }
+
+    .col3{
+        clear: both;
+        padding: .4em;
+
+    }
+
+    footer{
+        clear:left;
+    }
+
+}
+/*Desktop Layout - Optimized for width greater than 768px */
+
+@media screen and (min-width: 769px) {
+
+
+    header{
+        background-image: linear-gradient(to bottom right, #fffafa, rgb(200, 240, 200))
+    }
+
+    ul{
+        list-style-type: none;
+        list-style-position: inside;
+
+    }
+
+    li{
+        display: inline-block;
+        padding: 3%;
+
+    }
+    
+    a:link {
+        color: slategray;
+    }
+    
+    a:hover{
+        color: steelblue;
+    }
+
+    a:visited{
+        color: rgb(60, 100, 60);
+    }
+   body {
+    background-color: rgb(200,240,200);
+    text-align: center;
+    }
+    .col1{
+        width: 25%;
+        float: left;
+        padding: .3em;
+    }
+    .col2{
+        width: 40%;
+        float: left;
+        padding: .3em;
+
+    }
+    .col3{
+        width: 25%;
+        float: left;
+        padding: .3em;
+    }
+
+    footer{
+        clear: left;
+    }
+}
+
+
+
+

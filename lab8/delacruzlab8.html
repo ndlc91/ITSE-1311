@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DeLaCruz's in NYC</title>
+    <link href="https://fonts.googleapis.com/css?family=Grenze|Noto+Sans&display=swap" rel="stylesheet">
+    <script>
+        let myTimer = setInterval(imageRandom, 3000);
+        function imageRandom() {
+            let randomNumber = Math.floor(Math.random() * 9) + 1;
+            document.getElementById("check").innerHTML = randomNumber;
+            document.getElementById("swap_image").src = randomNumber + ".jpg";
+        }
+    </script>
+    <style>
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+    }
+    body{
+        background-image: url("background.jpg");
+        background-color: #444444;
+        background-size:cover;
+    }
+
+    header{
+        text-align: center;
+        background-image: linear-gradient(#fffafa, #666666);
+        font-family: 'Grenze', serif;
+    }
+
+    article{
+        background-color: rgba(255, 255, 2555, .8);
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        font-family: 'Noto Sans', sans-serif;
+
+    }
+
+    figure{
+        padding-left: 20px;
+    }
+    footer{
+        background-image: linear-gradient(#fffafa, #666666);
+        font-family: 'Grenze', serif;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width:100%;
+        padding-left: 10px; 
+    }
+    .flex{
+        margin-top: 7%;
+        display:flex;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 30px;
+    }
+
+    a{
+        color:black;
+    }
+    a:hover{
+        color:#333333;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+    <h1>DeLaCruz's in NYC</h1>
+    <nav>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/History_of_New_York_City">NYC History</a></li>
+            <li><a href="https://travel.usnews.com/Hotels/New_York_NY/">Where To Stay</a></li>
+            <li><a href="https://www.fodors.com/world/north-america/usa/new-york/new-york-city/experiences/news/photos/20-ultimate-things-to-do-in-new-york-city">Things to See</a></li>
+        </ul>
+    </nav>
+    </header>
+    <div class=flex>
+    <p id="check"></p>
+    <figure><img id="swap_image" src="9.jpg" alt="trip images"></figure>
+    <article>
+    <h2>About our Trip</h2>
+    <p>This summer, my wife and I went to New York City. We stayed in Brooklyn, did some sight seeing, and a had a great
+        time! I wanted to share a few photos of the trip, and tell you a little bit about our favorite sites!</p>
+    <br>
+    <p>I spend quite a bit of time in NYC for work, so I am familiar with quite a few of the popular sites, and we
+        wanted to try and explore more under the radar sites, and get a feel for a few individual neighborhoods, rather
+        than see the big tourist-y things. We stayed in a neighborhood called Bushwick in Brooklyn, which is very young
+        and trendy, and has a ton of bars, restaurants, and coffee shops. We felt like we picked the best place to stay
+        on our trip, and could have spent our whole time in the neighborhood without running out of things to do!</p>
+    <br>
+    <p>One of our favorite things we did was visit Coney Island. We went on July 5th, there was a big fireworks display,
+        and the whole boardwalk had an 80’s theme to celebrate the release of Stranger Things season 3. The atmosphere
+        was so fun and this part of the trip is a memory I’ll hold on to for a long time!
+    </p>
+    <br> 
+    <p>Something that stands out to me about the city is the size and density of the buildings. I love seeing the
+        grandness and oldness of all the buildings, as well as the mix of old and new. I hope you enjoy the pictures,
+        and if you ever need any recommendations for things to do in NYC I would be happy to share more about my
+        experiences!</p>
+   </article>
+   </div>
+
+   <footer>
+    <p>Nathan De La Cruz: August 3rd</p>
+   </footer>
+
+</body>
+
+
+
+
+
+</html>

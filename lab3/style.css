@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to bottom right, #f0f0f0, #e8dec1);
+
+
+}
+
+p{
+    text-align: center;
+}
+.font2{
+    font-family: 'Assistant', sans-serif;
+}
+h3{
+    font-size: 20px;
+}
+
+header{
+    text-align: center;
+    background-image: linear-gradient(to bottom, slategrey, #9c9c9c);
+    border-radius: 10px;
+}
+
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    width: 18%;
+    padding-top: 30px;
+}
+
+
+h1, h2{
+    color: beige;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.info{
+    color: rgba(128, 94, 9, 0.842);
+}
+
+nav a{
+    color: beige;
+    text-decoration: none;
+
+    
+}
+
+a:hover{
+    color: goldenrod;
+}
+
+a:visited{
+    color: purple;
+}
+
+li{
+    list-style-type: square;
+}
+
+footer{ 
+    font-size: 20px;
+    color: rgba(128, 94, 9, 0.842);
+    text-align: center;
+    letter-spacing: .1em;
+    word-spacing: .3em;
+    clear: right;
+    border: #9c9c9c;
+    border-style: solid;
+    padding-top: 30px;
+    border-radius: 100px;
+    width: auto;
+
+
+}
+
+a{
+    text-decoration: underline;
+}
+
+.dogs {
+    float: right;
+
+}
+
+#box2{
+    clear:right;
+    margin-top: 20px;
+}
+
+#box3{
+    clear:right;
+    margin-top: 20px;
+
+}
+
+#box4{
+    clear:right;
+    margin-top: 20px;
+
+}
+.description {
+    text-align: center;
+    font-size: 20px;
+    color: rgba(128, 94, 9, 0.842);
+    margin-right: 10px;
+
+}
+
+h3 {
+    text-align: center;
+    color: rgba(70, 51, 4, 0.822);
+    font-weight: bold; 
+}
+
+.background{
+    background-image: url(media/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.adopt {
+    list-style-position: inside;
+    text-align: center;
+    height: 15px;
+    margin-bottom: 20px;
+}
+
+.adopt li{
+    list-style-type: decimal;
+}

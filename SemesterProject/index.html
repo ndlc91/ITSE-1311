@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="band, dallas, music, indie rock, new">
+        <meta name="description" content="This is a website for Mankind Forever, the Dallas based rock band.">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|EB+Garamond&display=swap" rel="stylesheet">
+        <title>MANKIND FOREVER</title>
+        <script>
+            let myTimer = setInterval(imageRandom, 3000);
+            function imageRandom() {
+                let randomNumber = Math.floor(Math.random() * 13) + 1;
+                document.getElementById("swap_image").src = "media/" + randomNumber + ".jpg";
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html">Mankind Forever</a></h1>
+            <nav>
+                <ul class="nav_flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="albums.html">Albums</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="center">
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/27k5sXMpF1s" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    <figure><img id="swap_image" src="media/3.jpg" alt="pictures of the band"></figure>
+        </main>
+    
+    <footer>
+        <p>Nathan De La Cruz</p>
+        <p>August 9 2019</p>
+    </footer>
+    </body>
+</html>
